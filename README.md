@@ -1,38 +1,41 @@
-# Taphouse
+# Taphouse 🌟
 
-Welcome to the Taphouse project! This repository is designed to manage and maintain a comprehensive platform for tracking and showcasing beers.
+Welcome to Taphouse, a terminal UI designed to simplify the process of browsing, searching, and managing Homebrew packages! Taphouse offers a user-friendly interface with four main tabs:
+- **Installed Formulae** 🍺
+- **Installed Casks** 🥂
+- **Browse Formulae** 🔍
+- **Browse Casks** 📦
+
+## Overview
+Taphouse allows users to easily install, uninstall, and upgrade packages directly from their terminal. You can navigate between tabs to view and manage your Homebrew packages effortlessly.
 
 ## Features
-- **User Authentication**: Create and manage user profiles.
-- **Beer Catalog**: Browse a diverse selection of beers with detailed information.
-- **Reviews and Ratings**: Users can share their experiences and rate different beers.
-- **Search Functionality**: Easily find your favorite beers by name, style, or brewery.
+- **Search Functionality**: Quickly find packages!
+- **Keyboard Shortcuts**:
+  - `q`: Quit
+  - `Tab`/`BackTab`: Switch tabs
+  - `j`/`k` or `up`/`down`: Navigate
+  - `/`: Search
+  - `i`: Install from browse tabs
+  - `u`: Uninstall
+  - `U`: Upgrade
+  - `r`: Refresh
 
-## Installation
-To get started with Taphouse, follow these steps:
+## Project Structure
+```
+/src/
+  ├── main.rs
+  ├── app.rs
+  ├── brew
+  └── ui
+```
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/rbkrabbe/taphouse.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd taphouse
-   ```
-3. Install the necessary dependencies:
-   ```bash
-   npm install
-   ```
-4. Start the development server:
-   ```bash
-   npm start
-   ```
+## Getting Started
+To build and run Taphouse, follow these steps:
+1. **Build the project**: Run `cargo build`
+2. **Run the project**: Run `cargo run`
 
-## Usage
-After starting the development server, you can access the application by visiting `http://localhost:3000` in your browser. From there, you can explore the various features of Taphouse.
+## Keyboard Shortcuts Documentation
+Refer to the features section for a list of keyboard shortcuts that help you navigate and manage your Homebrew packages efficiently!
 
-## Contribution
-If you would like to contribute, please fork the repository and submit a pull request. We welcome any improvements, bug fixes, and suggestions!
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Happy brewing! 🍻
